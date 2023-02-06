@@ -1,43 +1,39 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import Image from "next/image";
+const key = process.env.NEXT_PUBLIC_GNEWS;
+
 import { useStateContext } from "@/context/StateContextProvider";
-import Router from "next/router";
 import React from "react";
 
-const key = process.env.GNEWS;
-
 export default function SearchArea() {
-  const { search, setSearch, text, setText, searchResults, setSearchResults } =
-    useStateContext();
+  const { search, setSearch, setSearchResults } = useStateContext();
 
-  const router = useRouter();
-
-  // Store current search area input
+  /**
+   * Store current search area input in state
+   */
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);
   }
 
-  // Call API on enter or button click
+  /**
+   * Call API on button click
+   */
   async function handleClick() {
     await getAPIData();
-    //router.push("/find");
   }
 
+  /**
+   * Call API on keyboard enter button press
+   */
   async function handleEnter(event: React.KeyboardEvent<HTMLInputElement>) {
     if (event.keyCode == 13) {
       await getAPIData();
-      //router.push("/find");
     }
   }
 
-  console.log(`key test:`, key);
-
-  const pro = process.env;
-
-  console.dir(`process.env:`, process.env);
-
+  /**
+   * Fetch API data if there is text in search state.
+   */
   async function getAPIData() {
     try {
       if (search.length !== 0) {

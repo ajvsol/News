@@ -12,7 +12,6 @@ export const StateContext = createContext([] as any);
 // Context provider
 export function StateContextProvider({ children }: any) {
   const [search, setSearch] = useState("");
-  const [text, setText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
   return (
@@ -20,8 +19,6 @@ export function StateContextProvider({ children }: any) {
       value={{
         search,
         setSearch,
-        text,
-        setText,
         searchResults,
         setSearchResults,
       }}

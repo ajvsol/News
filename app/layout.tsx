@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <StateContextProvider>
-      <html lang="en">
+      <html lang="en" className="bg-blue-300 dark:bg-blue-900">
         {/*
           <head /> will contain the components returned by the nearest parent
           head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
