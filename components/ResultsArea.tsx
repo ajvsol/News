@@ -8,7 +8,10 @@ export default function ResultsArea() {
   const articles = searchResults.articles || [];
 
   return (
-    <div id="results-area" className="space-y-1 max-w-2xl">
+    <div
+      id="results-area"
+      className="space-y-2 max-w-lg flex-col justify-center items-center"
+    >
       {articles.map((element: any, index: number) => {
         return (
           <Card

@@ -1,6 +1,5 @@
 // Next.js being used because it's performance is great thanks to server-side rendering, and it makes page routing simple
 
-import Image from "next/image";
 import SearchArea from "@/components/SearchArea";
 import ResultsArea from "@/components/ResultsArea";
 

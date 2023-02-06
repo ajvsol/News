@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "./globals.css";
 import { AppProps } from "next/app";
 import { StateContextProvider } from "@/context/StateContextProvider";
 
