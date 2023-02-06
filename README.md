@@ -1,31 +1,38 @@
-# Percayso Programming Exercise 3
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Brief
+## Getting Started
 
-Create a website that gets news from the GNews api:
+First, run the development server:
 
-    https://gnews.io/?ref=apilist.fun
-    
-Your website must:    
-      
-  1) Include a search area
-  2) Include a results area
-  3) Include tests
-  4) Be hosted on a publicly accessible URL, so we can see it working
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-You are free to choose:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-  1) How to style all aspects of the page.
-  2) What language and framework to use.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-We are looking to understand your approach to solving this problem as much as the actual technical solution. Add comments to your code to help us understand your thinking. 
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Googling syntax is allowed, googling solutions is not.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Submitting your solution
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Please commit your solution within the time frame given to you, even if your solution is not complete. We will be interested in seeing how you approached the problem.
+## Learn More
 
-## Extra credit
+To learn more about Next.js, take a look at the following resources:
 
-If you're in the mood for showboating, plese feel free to show us what else you can do. E.g. you could automate tests for your solution.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
