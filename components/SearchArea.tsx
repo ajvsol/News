@@ -56,8 +56,8 @@ export default function SearchArea() {
   }
 
   return (
-    <div id="search-area" className="flex min-w-[95%] p-4">
-      <div id="search-input" className="flex min-w-xl w-full relative">
+    <div id="search-area" className="flex w-[85%] pl-2">
+      <div id="search-input" className="flex min-w-xl w-[70%] relative">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <svg
             aria-hidden="true"
@@ -91,8 +91,8 @@ export default function SearchArea() {
         type="submit"
         data-testid="SearchBarButton"
         className="p-2.5 ml-2 text-sm font-medium 
-      text-white bg-[#FF6720] rounded-lg border border-yellow-700 hover:bg-[#9c0d38] focus:ring-4 focus:outline-none focus:ring-yellow-300 
-      dark:bg-[#FF6720] dark:hover:bg-yellow-600 dark:focus:ring-yellow-800"
+      text-white bg-[#0053e6] rounded-lg border border-gray-700 hover:bg-blue-600 focus:ring-2 focus:outline-none
+      dark:bg-[#0053e6] dark:hover:bg-blue-600 dark:focus:bg-blue-700"
       >
         <svg
           className="w-5 h-5"
