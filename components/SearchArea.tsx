@@ -47,7 +47,7 @@ export default function SearchArea() {
           }
         );
         const data = await res.json();
-        console.log("DATA:", data);
+        console.log("searchResults:", data);
         setSearchResults(data);
       }
     } catch (e) {
@@ -56,8 +56,8 @@ export default function SearchArea() {
   }
 
   return (
-    <div className="flex min-w-[95%]  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
-      <div className="flex w-full relative">
+    <div id="search-area" className="flex min-w-[95%] p-4">
+      <div id="search-input" className="flex min-w-xl w-full relative">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <svg
             aria-hidden="true"
