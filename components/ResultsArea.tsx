@@ -41,7 +41,7 @@ export default function ResultsArea() {
                 openModal(index);
               }}
               data-testid={`cardbutton-${index}`}
-              className="m-1 text-gray-900 dark:text-gray-100 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 hover:dark:bg-gray-800"
+              className="m-1 text-slate-900 dark:text-gray-100 bg-gray-300 dark:bg-gray-600 hover:bg-[#0053e6] hover:text-gray-100 hover:dark:bg-[#0053e6]"
             >
               Show More
               <svg
