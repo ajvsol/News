@@ -1,8 +1,8 @@
 "use client";
 
 import { Card, Button } from "flowbite-react";
-import { useStateContext } from "@/context/StateContextProvider";
-import MyModal from "./Modal";
+import { useStateContext } from "../context/StateContextProvider";
+import Modal from "./Modal";
 
 export default function ResultsArea() {
   const { searchResults, setIsOpen, setModalIndex } = useStateContext();
@@ -18,7 +18,8 @@ export default function ResultsArea() {
   return (
     <div
       id="results-area"
-      className="space-y-2 max-w-4xl p-2 flex-col place-self-center justify-self-center	justify-items-center content-center items-center self-center "
+      data-testid="ResultsArea"
+      className="flex flex-col gap-2 max-w-4xl p-2 items-center"
     >
       {articles.map((element: any, index: number) => {
         return (
@@ -56,7 +57,7 @@ export default function ResultsArea() {
                 />
               </svg>
             </Button>
-            <MyModal />
+            <Modal />
           </Card>
         );
       })}

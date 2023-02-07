@@ -2,7 +2,7 @@
 
 const key = process.env.NEXT_PUBLIC_GNEWS;
 
-import { useStateContext } from "@/context/StateContextProvider";
+import { useStateContext } from "../context/StateContextProvider";
 import React from "react";
 
 export default function SearchArea() {
