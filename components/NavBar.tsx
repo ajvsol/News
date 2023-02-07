@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div data-testid="NavBar">
+    <div data-testid="NavBar" className="">
       <Navbar
         fluid={true}
         rounded={true}
@@ -21,7 +21,7 @@ export default function NavBar() {
           ></Image>
         </Link>
         <SearchArea />
-        <div className="flex flex-row-reverse p-1 md:order-2">
+        <div className="p-1 md:order-2">
           <Dropdown
             arrowIcon={false}
             inline={true}
@@ -60,22 +60,3 @@ export default function NavBar() {
     </div>
   );
 }
-
-//export default function Navbar() {
-//  return (
-//    <>
-//      <Navbar fluid={true} rounded={true}>
-
-//        <Navbar.Collapse>
-//          <Navbar.Link href="/navbars" active={true}>
-//            Home
-//          </Navbar.Link>
-//          <Navbar.Link href="/navbars">About</Navbar.Link>
-//          <Navbar.Link href="/navbars">Services</Navbar.Link>
-//          <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-//          <Navbar.Link href="/navbars">Contact</Navbar.Link>
-//        </Navbar.Collapse>
-//      </Navbar>
-//    </>
-//  );
-//}

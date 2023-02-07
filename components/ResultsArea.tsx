@@ -19,7 +19,7 @@ export default function ResultsArea() {
     <div
       id="results-area"
       data-testid="ResultsArea"
-      className="flex flex-col gap-2 max-w-4xl p-2 items-center"
+      className="flex flex-col gap-2 p-2 items-center"
     >
       {articles.map((element: any, index: number) => {
         return (
@@ -27,7 +27,7 @@ export default function ResultsArea() {
             key={index}
             data-testid={`card-${index}`}
             imgSrc={`${element.image}`}
-            className="max-w-md border-gray-500 dark:border-gray-400 dark:bg-gray-700
+            className="max-w-3xl border-gray-500 dark:border-gray-400 dark:bg-gray-700
 						"
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
