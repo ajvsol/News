@@ -10,6 +10,9 @@ import {
 describe("Home is working correctly", () => {
   const searchResults = exampleData;
 
+  /**
+   * Test to confirm that the component actually renders on the page
+   */
   it(`Home renders on the homepage`, () => {
     render(
       <StateContextProvider

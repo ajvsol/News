@@ -1,6 +1,6 @@
 "use client";
 /**
- * Makes the stored state accessible to all pages and components.
+ * Makes the stored state accessible to all pages easily.
  */
 import { createContext, useContext, useState } from "react";
 
@@ -36,6 +36,7 @@ export function useStateContext() {
   return useContext(StateContext);
 }
 
+// Example data for initial state and for automated tests
 export const exampleData = {
   totalArticles: 6566,
   articles: [

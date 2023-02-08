@@ -1,4 +1,4 @@
-// Next.js being used because it's performance is great thanks to server-side rendering, and it makes page routing simple
+// Next.js being used mainly because it's performance is great thanks to server-side rendering
 
 import ResultsArea from "../components/ResultsArea";
 import NavBar from "../components/NavBar";

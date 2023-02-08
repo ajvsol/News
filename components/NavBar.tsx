@@ -1,4 +1,5 @@
 import SearchArea from "../components/SearchArea";
+// Useful library for nicely styled basic components
 import { Navbar, Dropdown, Avatar } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
