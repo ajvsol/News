@@ -11,17 +11,17 @@ export default function NavBar() {
         rounded={true}
         className="p-3 border-gray-200 rounded bg-gray-100  dark:bg-gray-800 dark:border-gray-700 "
       >
-        <Link href="/" className="">
+        <Link href="/" className="sm:invisible">
           <Image
             src="/logo-blue.png"
             width="200"
             height="100"
-            className="h-6 sm:h-10 sm:w-36 lg:w-36"
+            className="h-10 w-36 visible"
             alt="logo-image"
           ></Image>
         </Link>
         <SearchArea />
-        <div className="p-1 md:order-2">
+        <div className="p-1 min-w-[5%]">
           <Dropdown
             arrowIcon={false}
             inline={true}
@@ -29,7 +29,7 @@ export default function NavBar() {
               <Avatar
                 alt="Aaron Sollesse"
                 img="/aaron-sollesse.jpg"
-                size="xs"
+                size="md"
                 rounded={true}
               />
             }

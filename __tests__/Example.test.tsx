@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { it, expect, describe } from "@jest/globals";
-import Example from "../components/Example";
+import Example from "../examples/Example";
 import { useStateContext, exampleData } from "../context/StateContextProvider";
 
 describe("Example is working correctly", () => {

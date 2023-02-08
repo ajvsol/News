@@ -59,9 +59,9 @@ export default function SearchArea() {
     <div
       id="search-area"
       data-testid="SearchArea"
-      className="flex w-[85%] pl-2"
+      className="flex w-[95%] pl-2"
     >
-      <div id="search-input" className="flex min-w-xl w-[70%] relative">
+      <div id="search-input" className="flex w-full max-w-[90%] relative">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <svg
             aria-hidden="true"
