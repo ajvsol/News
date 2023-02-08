@@ -1,15 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import { it, expect, describe } from "@jest/globals";
+import Example2 from "../examples/Example2";
 import {
-  exampleData,
   StateContextProvider,
+  exampleData,
 } from "../context/StateContextProvider";
-import ResultsArea from "../components/ResultsArea";
 
-describe("ResultsArea is working correctly", () => {
+describe("Example is working correctly", () => {
   const searchResults = exampleData;
 
-  it(`ResultsArea renders on the homepage`, () => {
+  it(`Example renders on the homepage`, () => {
     render(
       <StateContextProvider
         value={{
@@ -21,10 +21,10 @@ describe("ResultsArea is working correctly", () => {
           setModalIndex: jest.fn(),
         }}
       >
-        <ResultsArea />
+        <Example2 />
       </StateContextProvider>
     );
-    const actual = screen.getByTestId("ResultsArea");
+    const actual = screen.getByTestId("Example2");
     expect(actual).toBeInTheDocument();
   });
 });

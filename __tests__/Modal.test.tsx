@@ -1,15 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import { it, expect, describe } from "@jest/globals";
 import {
-  useStateContext,
   exampleData,
   StateContextProvider,
 } from "../context/StateContextProvider";
 import Modal from "../components/Modal";
 
 describe("Modal is working correctly", () => {
-  //const { searchResults } = useStateContext();
-
   const searchResults = exampleData;
 
   it(`Modal renders on the homepage`, () => {

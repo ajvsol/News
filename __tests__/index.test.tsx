@@ -2,17 +2,29 @@ import { render, screen } from "@testing-library/react";
 import { it, expect, describe } from "@jest/globals";
 import "@testing-library/jest-dom";
 import Home from "../pages/index";
-//import {
-//  useStateContext,
-//  StateContext,
-//  StateContextProvider,
-//} from "../context/StateContextProvider";
+import {
+  exampleData,
+  StateContextProvider,
+} from "../context/StateContextProvider";
 
 describe("Home is working correctly", () => {
-  //const { searchResults, setIsOpen, setModalIndex } = useStateContext();
+  const searchResults = exampleData;
 
   it(`Home renders on the homepage`, () => {
-    render(<Home />);
+    render(
+      <StateContextProvider
+        value={{
+          searchResults,
+          setSearchResults: jest.fn(),
+          isOpen: true,
+          setIsOpen: jest.fn(),
+          modalIndex: 0,
+          setModalIndex: jest.fn(),
+        }}
+      >
+        <Home />
+      </StateContextProvider>
+    );
     const actual = screen.getByTestId("Home");
     expect(actual).toBeInTheDocument();
   });

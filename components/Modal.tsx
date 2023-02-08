@@ -18,7 +18,7 @@ export default function MyModal() {
   }
 
   return (
-    <div data-testid="NavBar">
+    <div data-testid="Modal">
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
